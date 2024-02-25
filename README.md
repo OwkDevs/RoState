@@ -16,23 +16,24 @@ Event-driven architecture: Execute specific actions when entering or exiting sta
 ## Setup
 Import the RoState module into your Roblox Studio project.
 Require the RoState module in your scripts where you need to manage states.
+fix yo CODE
 ```lua
-Copy code
-local RoState = require(game:GetService("ReplicatedStorage"):WaitForChild("RoState"))
+local RoState = require(path.to.rostate)
+
 -- Initialize the state machine with the defined states
-local NewState = RoState.new()
-NewState:Set("Blue")
-print(NewState:Get()) --Prints "Blue"
-local Connection = NewState:Changed(function(newvalue)
-    print("State Value Changed To: "..newvalue)
+local testState = RoState.new()
+
+testState:Set("Blue")
+print(testState:Get()) -- Blue
+
+local connection = testState:Changed(function(newValue)
+    print(`State value changed to: {newValue}`)
 end)
-State:Set(true) Prints "State Value Changed To: true"
-Connection:Disconnect() --Disconnects the connection we made earlier
-if NewState:Is(true) then
-    print("NewState") --Prints
-end
 
+testState:Set(true) -- outputs "State value changed to: true"
+print(testState:Is(true)) -- true
 
+connection:Disconnect() -- Disconnects the connection we made earlier
 ```
 ## Contributing
 
