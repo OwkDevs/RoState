@@ -62,9 +62,10 @@ end)
 -- Register a callback function to execute when exiting the Running state
 stateMachine:OnStateExit("Running", function()
     print("Executing Running state exit callback")
-end)
-Contributing
-```
+end)```
+
+## Contributing
+
 
 Contributions are welcome! If you have suggestions for improvements or new features, please submit a pull request or open an issue on GitHub.
 
