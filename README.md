@@ -14,8 +14,8 @@ Event-driven architecture: Execute specific actions when entering or exiting sta
 # Usage
 
 ## Setup
-Import the StateFramework module into your Roblox Studio project.
-Require the StateFramework module in your scripts where you need to manage states.
+Import the RoState module into your Roblox Studio project.
+Require the RoState module in your scripts where you need to manage states.
 ```lua
 Copy code
 local RoState = require(game:GetService("ReplicatedStorage"):WaitForChild("RoState"))
