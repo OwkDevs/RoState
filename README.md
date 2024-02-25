@@ -1,4 +1,4 @@
-# Roblox State Framework
+# RoState
 
 # Overview
 
@@ -18,51 +18,21 @@ Import the StateFramework module into your Roblox Studio project.
 Require the StateFramework module in your scripts where you need to manage states.
 ```lua
 Copy code
-local StateFramework = require(game:GetService("ReplicatedStorage"):WaitForChild("StateFramework"))
-Define States
-lua
-Copy code
--- Define states using a table with state names as keys and state functions as values.
-local states = {
-    Idle = function()
-        -- Define behavior for the Idle state
-        print("Entering Idle state")
-    end,
-    Running = function()
-        -- Define behavior for the Running state
-        print("Entering Running state")
-    end,
-    Jumping = function()
-        -- Define behavior for the Jumping state
-        print("Entering Jumping state")
-    end
-}
-
+local RoState = require(game:GetService("ReplicatedStorage"):WaitForChild("RoState"))
 -- Initialize the state machine with the defined states
-local stateMachine = StateFramework.new(states)
-Transition Between States
-lua
-Copy code
--- Set the current state to Idle
-stateMachine:SetState("Idle")
-
--- Transition to the Running state
-stateMachine:SetState("Running")
-
--- Transition to the Jumping state
-stateMachine:SetState("Jumping")
-Event Handling
-lua
-Copy code
--- Register a callback function to execute when entering the Jumping state
-stateMachine:OnStateEnter("Jumping", function()
-    print("Executing Jumping state enter callback")
+local NewState = RoState.new()
+NewState:Set("Blue")
+print(NewState:Get()) --Prints "Blue"
+local Connection = NewState:Changed(function(newvalue)
+    print("State Value Changed To: "..newvalue)
 end)
+State:Set(true) Prints "State Value Changed To: true"
+Connection:Disconnect()
+if NewState:Is(true) then
+    print("NewState") --Prints
+end
 
--- Register a callback function to execute when exiting the Running state
-stateMachine:OnStateExit("Running", function()
-    print("Executing Running state exit callback")
-end)
+
 ```
 ## Contributing
 
