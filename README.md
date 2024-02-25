@@ -27,7 +27,7 @@ local Connection = NewState:Changed(function(newvalue)
     print("State Value Changed To: "..newvalue)
 end)
 State:Set(true) Prints "State Value Changed To: true"
-Connection:Disconnect()
+Connection:Disconnect() --Disconnects the connection we made earlier
 if NewState:Is(true) then
     print("NewState") --Prints
 end
