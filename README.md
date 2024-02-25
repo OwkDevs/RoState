@@ -16,7 +16,7 @@ Event-driven architecture: Execute specific actions when entering or exiting sta
 ## Setup
 Import the StateFramework module into your Roblox Studio project.
 Require the StateFramework module in your scripts where you need to manage states.
-lua
+```lua
 Copy code
 local StateFramework = require(game:GetService("ReplicatedStorage"):WaitForChild("StateFramework"))
 Define States
@@ -64,6 +64,7 @@ stateMachine:OnStateExit("Running", function()
     print("Executing Running state exit callback")
 end)
 Contributing
+```
 
 Contributions are welcome! If you have suggestions for improvements or new features, please submit a pull request or open an issue on GitHub.
 
