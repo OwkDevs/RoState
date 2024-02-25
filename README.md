@@ -1,6 +1,6 @@
-#Roblox State Framework
+# Roblox State Framework
 
-Overview
+# Overview
 
 The Roblox State Framework is a modular system designed to help developers manage and organize game states within Roblox Studio projects. States are fundamental to controlling the flow and behavior of games, and this framework provides a flexible and efficient way to implement them.
 
@@ -10,9 +10,10 @@ Easy state management: Quickly switch between different game states.
 Customizable state behaviors: Define unique actions and properties for each state.
 Modular design: Add or remove states easily to suit your game's needs.
 Event-driven architecture: Execute specific actions when entering or exiting states.
-Usage
 
-Setup
+#Usage
+
+#Setup
 Import the StateFramework module into your Roblox Studio project.
 Require the StateFramework module in your scripts where you need to manage states.
 lua
