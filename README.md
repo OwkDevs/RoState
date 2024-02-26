@@ -1,5 +1,5 @@
 <div align="center">
-	<h1>RoState (In Dev)</h1>
+	<h1>RoState (IN DEV)</h1>
 </div>
 
 # Overview
