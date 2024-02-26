@@ -18,8 +18,6 @@ Event-driven architecture: Execute specific actions when entering or exiting sta
 </div>
 
 ## Example
-Import the RoState module into your Roblox Studio project.
-Require the RoState module in your scripts where you need to manage states.
 ```lua
 local RoState = require(path.to.rostate)
 
