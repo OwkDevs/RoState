@@ -21,21 +21,22 @@ Event-driven architecture: Execute specific actions when entering or exiting sta
 ```lua
 local RoState = require(path.to.rostate)
 
--- Initialize the state machine with the defined states
-local newState = RoState.new("Idle") -- First Arg is starting state
+-- Create a new RoState object, first argument is the starting value
+local newState = RoState.new("Idle")
 
+-- Creating a OnStateEnter connection
 local StateEntered = newState:OnStateEnter("Walking",function(lastValue,newValue)
       if lastValue == "Idle" then
          print(`State changed from {lastValue} to {newValue}`
       end
 end)
 
+--Creating a Changed connection
 local StateChanged = newState:Changed(function(lastValue,newValue)
       print("newState changed")
 end)
 
-newState:set("Walking")
-
+newState:Set("Walking")
 ```
 ### Changing States
 
