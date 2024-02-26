@@ -69,7 +69,7 @@ connection:Disconnect() -- Disconnects the connection we made earlier
 
 <details>
     <summary>OnStateExit</summary>
-    This connection is fired when a specific state is entered.
+    This connection is fired when a specific state is exited.
 
 ```lua
 local testState = RoState.new()
