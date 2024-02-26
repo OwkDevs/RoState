@@ -20,19 +20,25 @@ Require the RoState module in your scripts where you need to manage states.
 local RoState = require(path.to.rostate)
 
 -- Initialize the state machine with the defined states
-local testState = RoState.new()
+local testState = RoState.new() -- First Arg is starting state
 ```
 #### Changing States
 ```lua
-testState:set("OwkSoCool")
-print(testState) --Prints OwkSoCool
+local testState = RoState.new()
+
+testState:set("OwkSoCool") -- Change the value of the state
+
+print(testState) -- Prints OwkSoCool
 ```
 
 #### Connections
 ```lua
+local testState = RoState.new()
+
 local connection = testState:Changed(function(newValue)
     print(`State value changed to: {newValue}`)
 end)
+
 connection:Disconnect() -- Disconnects the connection we made earlier
 ```
 
