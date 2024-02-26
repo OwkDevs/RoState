@@ -40,7 +40,8 @@ print(testState) -- Prints OwkSoCool
 <details>
     <summary>Changed</summary>
     This connection is fired when a state is changed.
-</details>
+
+
 ```lua
 local testState = RoState.new()
 
@@ -50,6 +51,8 @@ end)
 
 connection:Disconnect() -- Disconnects the connection we made earlier
 ```
+</details>
+
 
 
 ## Contributing
