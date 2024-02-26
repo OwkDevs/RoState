@@ -31,7 +31,7 @@ testState:set("OwkSoCool") -- Change the value of the state
 print(testState) -- Prints OwkSoCool
 ```
 
-#### Connections
+## Connections
 
 ##### Changed
 This connection is fired when a state is changed.
