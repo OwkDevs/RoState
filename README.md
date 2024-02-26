@@ -13,7 +13,9 @@ Customizable state behaviors: Define unique actions and properties for each stat
 Modular design: Add or remove states easily to suit your game's needs.
 Event-driven architecture: Execute specific actions when entering or exiting states.
 
-# Usage
+<div align="center">
+	<h1>Usage</h1>
+</div>
 
 ## Setup
 Import the RoState module into your Roblox Studio project.
@@ -24,7 +26,7 @@ local RoState = require(path.to.rostate)
 -- Initialize the state machine with the defined states
 local testState = RoState.new() -- First Arg is starting state
 ```
-#### Changing States
+### Changing States
 ```lua
 local testState = RoState.new()
 
@@ -35,7 +37,7 @@ print(testState) -- Prints OwkSoCool
 
 ## Connections
 
-##### Changed
+### Changed
 This connection is fired when a state is changed.
 ```lua
 local testState = RoState.new()
