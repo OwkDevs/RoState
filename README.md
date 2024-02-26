@@ -1,6 +1,7 @@
-<p align="center">
-# RoState
-</p>
+<div align="center">
+	<h1>RoState</h1>
+</div>
+
 # Overview
 
 RoState is a modular system designed to help developers manage and organize game states within Roblox Studio projects. States are fundamental to controlling the flow and behavior of games, and this framework provides a flexible and efficient way to implement them.
