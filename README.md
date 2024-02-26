@@ -26,7 +26,7 @@ local RoState = require(path.to.rostate)
 -- Initialize the state machine with the defined states
 local testState = RoState.new() -- First Arg is starting state
 ```
-### Changing States
+## Changing States
 ```lua
 local testState = RoState.new()
 
