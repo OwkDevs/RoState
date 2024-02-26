@@ -24,14 +24,12 @@ local testState = RoState.new()
 
 testState:Set("Blue")
 print(testState:Get()) -- Blue
-
+```
+#### Connections
+```lua
 local connection = testState:Changed(function(newValue)
     print(`State value changed to: {newValue}`)
 end)
-
-testState:Set(1) -- outputs "State value changed to: true"
-print(testState:Is(1)) -- prints true (Is function returns true/false)
-
 connection:Disconnect() -- Disconnects the connection we made earlier
 ```
 ## Contributing
