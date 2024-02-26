@@ -21,10 +21,13 @@ local RoState = require(path.to.rostate)
 
 -- Initialize the state machine with the defined states
 local testState = RoState.new()
-
-testState:Set("Blue")
-print(testState:Get()) -- Blue
 ```
+#### Changing States
+```lua
+testState:set("OwkSoCool")
+print(testState) --Prints OwkSoCool
+```
+
 #### Connections
 ```lua
 local connection = testState:Changed(function(newValue)
@@ -32,6 +35,8 @@ local connection = testState:Changed(function(newValue)
 end)
 connection:Disconnect() -- Disconnects the connection we made earlier
 ```
+
+
 ## Contributing
 
 
