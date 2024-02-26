@@ -41,7 +41,6 @@ print(testState) -- Prints OwkSoCool
     <summary>Changed</summary>
     This connection is fired when a state is changed.
 
-
 ```lua
 local testState = RoState.new()
 
@@ -53,6 +52,20 @@ connection:Disconnect() -- Disconnects the connection we made earlier
 ```
 </details>
 
+<details>
+    <summary>OnStateEnter</summary>
+    This connection is fired when a specific state is entered.
+
+```lua
+local testState = RoState.new()
+
+local connection = testState:OnStateEnter(StateValue,function(newValue) -- StateValue is the state entered
+    print(`State value changed to: {newValue}`)
+end)
+
+connection:Disconnect() -- Disconnects the connection we made earlier
+```
+</details>
 
 
 ## Contributing
