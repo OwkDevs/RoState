@@ -59,8 +59,23 @@ connection:Disconnect() -- Disconnects the connection we made earlier
 ```lua
 local testState = RoState.new()
 
-local connection = testState:OnStateEnter(stateEntered,function(newValue --stateEntered)
-    print(`State value changed to: {newValue}`)
+local connection = testState:OnStateEnter(stateEntered,function(lastValue,newValue)
+    print(`Entered the state: {newValue}`)
+end)
+
+connection:Disconnect() -- Disconnects the connection we made earlier
+```
+</details>
+
+<details>
+    <summary>OnStateExit</summary>
+    This connection is fired when a specific state is entered.
+
+```lua
+local testState = RoState.new()
+
+local connection = testState:OnStateExit(stateExited,function(lastValue,newValue)
+    print(`Exited the state: {lastValue}`)
 end)
 
 connection:Disconnect() -- Disconnects the connection we made earlier
