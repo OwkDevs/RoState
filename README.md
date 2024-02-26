@@ -56,7 +56,7 @@ print(testState) -- Prints OwkSoCool
 
 <details>
     <summary>Pause</summary>
-    This function is used to pause the state.The first argument defined for how many seconds.
+    This function is used to pause a state.The first argument defined for how many seconds.
 
 ```lua
 local testState = RoState.new(1)
@@ -82,7 +82,7 @@ testState:Resume() -- Resume paused state
 
 <details>
     <summary>Reset</summary>
-    This function is used to reset state to its original value.
+    This function is used to reset a state to its original value.
 
 ```lua
 local testState = RoState.new(1)
