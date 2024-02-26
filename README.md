@@ -27,7 +27,7 @@ local RoState = require(path.to.rostate)
 local newState = RoState.new("Idle") -- First Arg is starting state
 
 local StateEntered = newState:OnStateEnter("Walking",function(lastValue,newValue)
-      if lastValue == "Idle then
+      if lastValue == "Idle" then
          print(`State changed from {lastValue} to {newValue}`
       end
 end)
