@@ -28,7 +28,9 @@ local testState = RoState.new() -- First Arg is starting state
 ```
 ### Changing States
 
-#### Set
+<details>
+    <summary>Set State</summary>
+    This function is used to set a state to any value.
 
 ```lua
 local testState = RoState.new()
@@ -37,6 +39,7 @@ testState:set("OwkSoCool") -- Change the value of the state
 
 print(testState) -- Prints OwkSoCool
 ```
+</details>
 
 ### Connections
 
