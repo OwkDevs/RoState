@@ -28,7 +28,7 @@ local testState = RoState.new() -- First Arg is starting state
 ```
 ### Changing States
 
-# set
+set
 ```lua
 local testState = RoState.new()
 
