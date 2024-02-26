@@ -38,7 +38,7 @@ end)
 
 newState:Set("Walking")
 ```
-### Changing States
+### Functions
 
 <details>
     <summary>Set State</summary>
@@ -47,9 +47,53 @@ newState:Set("Walking")
 ```lua
 local testState = RoState.new()
 
-testState:set("OwkSoCool") -- Change the value of the state
+testState:Set("OwkSoCool") -- Change the value of the state
 
 print(testState) -- Prints OwkSoCool
+```
+</details>
+
+
+<details>
+    <summary>Pause</summary>
+    This function is used to pause the state.The first argument defined for how many seconds.
+
+```lua
+local testState = RoState.new(1)
+
+testState:Pause(5) -- Pause state 5 seconds
+
+```
+</details>
+
+<details>
+    <summary>Resume</summary>
+    This function is used to resume a paused state.
+
+```lua
+local testState = RoState.new(1)
+
+testState:Pause(5) -- Pause state 5 seconds
+
+testState:Resume() -- Resume paused state
+
+```
+</details>
+
+<details>
+    <summary>Reset</summary>
+    This function is used to reset state to its original value.
+
+```lua
+local testState = RoState.new(1)
+
+testState:Set(5)
+
+testState:Set(3)
+
+testState:Reset() -- Resets the state to original value
+
+print(testState) -- Prints 5
 ```
 </details>
 
