@@ -17,14 +17,27 @@ Event-driven architecture: Execute specific actions when entering or exiting sta
 	<h1>Usage</h1>
 </div>
 
-## Setup
+## Example
 Import the RoState module into your Roblox Studio project.
 Require the RoState module in your scripts where you need to manage states.
 ```lua
 local RoState = require(path.to.rostate)
 
 -- Initialize the state machine with the defined states
-local testState = RoState.new() -- First Arg is starting state
+local newState = RoState.new("Idle") -- First Arg is starting state
+
+local StateEntered = newState:OnStateEnter("Walking",function(lastValue,newValue)
+      if lastValue == "Idle then
+         print(`State changed from {lastValue} to {newValue}`
+      end
+end)
+
+local StateChanged = newState:Changed(function(lastValue,newValue)
+      print("newState changed")
+end)
+
+newState:set("Walking")
+
 ```
 ### Changing States
 
@@ -50,7 +63,7 @@ print(testState) -- Prints OwkSoCool
 ```lua
 local testState = RoState.new()
 
-local connection = testState:Changed(function(newValue)
+local connection = testState:Changed(function(lastValue,newValue)
     print(`State value changed to: {newValue}`)
 end)
 
