@@ -59,7 +59,7 @@ connection:Disconnect() -- Disconnects the connection we made earlier
 ```lua
 local testState = RoState.new()
 
-local connection = testState:OnStateEnter(StateValue,function(newValue) -- StateValue is the state entered
+local connection = testState:OnStateEnter(stateEntered,function(newValue --stateEntered)
     print(`State value changed to: {newValue}`)
 end)
 
