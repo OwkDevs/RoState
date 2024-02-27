@@ -58,7 +58,7 @@ print(testState) -- Prints OwkSoCool
 
 <details>
     <summary>Pause</summary>
-    This function is used to pause a state.The first argument defines how many seconds the state will be paused.
+    This function is used to pause a state. The first argument defines how many seconds the state will be paused.
 			 Notice: If the first argument isnt sent then it wont be unpaused till state:Resume() is called.
 
 ```lua
