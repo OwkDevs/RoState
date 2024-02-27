@@ -18,6 +18,7 @@ Event-driven architecture: Execute specific actions when entering or exiting sta
 </div>
 
 ## Example
+
 ```lua
 local RoState = require(path.to.rostate)
 
