@@ -41,7 +41,7 @@ newState:Set("Walking")
 ### Functions
 
 <details>
-    <summary>Set State</summary>
+    <summary>Set</summary>
     This function is used to set a state to any value.
 
 ```lua
