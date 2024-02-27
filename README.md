@@ -41,8 +41,6 @@ end)
 newState:Set("Walking")
 ```
 
-### Functions
-
 <details>
     <summary>Set</summary>
     This function is used to set a state to any value.
@@ -100,8 +98,6 @@ testState:Reset() -- Resets the state to original value
 print(testState) -- Prints 5
 ```
 </details>
-
-### Connections
 
 <details>
     <summary>Changed</summary>
