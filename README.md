@@ -99,6 +99,8 @@ print(testState) -- Prints 5
 ```
 </details>
 
+--------------------------
+
 <details>
     <summary>Changed</summary>
     This connection is fired when a state is changed.
