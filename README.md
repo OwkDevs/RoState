@@ -149,7 +149,9 @@ connection:Disconnect() -- Disconnects the connection we made earlier
 </details>
 
 
-## Contributing
+<div align="center">
+	<h1>Contributing</h1>
+</div>
 
 
 Contributions are welcome! If you have suggestions for improvements or new features, please submit a pull request or open an issue on GitHub.
