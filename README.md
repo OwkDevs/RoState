@@ -41,6 +41,8 @@ end)
 newState:Set("Walking")
 ```
 
+--------------------------
+
 <details>
     <summary>Set</summary>
     This function is used to set a state to any value.
