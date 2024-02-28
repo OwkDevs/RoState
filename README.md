@@ -2,7 +2,7 @@
 	<h1>RoState (IN DEV)</h1>
 </div>
 
-# Overview
+## Overview
 
 RoState is a finite state machine designed to help developers manage and organize game states within Roblox Studio projects. States are fundamental to controlling the flow and behavior of games, and this framework provides a flexible and efficient way to implement them.
 
